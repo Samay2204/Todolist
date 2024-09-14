@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser=require("body-parser");
+const port = process.env.PORT || 3000
 
 
 
@@ -65,7 +66,7 @@ app.get("/about",(req,res)=>{
 //     res.redirect("/work");
 // });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("Server starts at localhost 3000");
     
-})
+});
